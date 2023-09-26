@@ -1,26 +1,71 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 80px 20px 0;
+    padding: 90px 20px 0;
     background-color: aquamarine;
     font-family: sans-serif;
-    font-size: 18px;
 }
 
-header{
+.header{
     position: fixed;
-    background-color: blue;
+    background-color: #076af0;
     top: 0;
     left: 0;
-    height: 80px;
+    height: 90px;
     width: 100%;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 auto;
+    line-height: 90px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 90px;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 10px;
+
+}
+.nav-menu-link:hover{
+
+    background-color: #024070;
+    transition: 0.5s;
 
 }
 
 aside{
     position: fixed;
     background-color: aquamarine;
-    top: 80px;
+    top: 90px;
     left: 0;
     bottom: 20px;
     width: 20%;
@@ -30,7 +75,7 @@ section{
     position: fixed;
     overflow-y: scroll;
     background-color: aquamarine;
-    top: 80px;
+    top: 90px;
     left: 20%;
     bottom: 20px;
     width: 80%;
@@ -43,37 +88,7 @@ footer{
     color: white;
     left: 0;
     bottom: 0;
-    height: 20px;
+
     width: 100%;
 }
 
-
-
-h1,h2,h3{
-    font-family: monospace;
-    color: yellowgreen;
-}
-article p{
-    color: yellow;
-}
-
-#titulo{
-    text-align: center;
-    background-color: azure;
-    color: #008040;
-    font-family: cursive;
-    font-size: 22px;
-}
-
-.producto{
-    background-color: #97e1da
-}
-
-a{
-    background-color: black;
-    color: white;
-}
-nav a:hover{
-    background-color: red;
-    color: yellow;
-}
