@@ -19,5 +19,23 @@ public interface CategoriaService {
     
     public List<Categoria> getCategorias(Boolean activo);
     
+    //Se programa el codigo para obtener una categoria
+    
+    public Categoria getCategoria (Categoria categoria);
+    
+    // Se actualiza o se crea un registro que tenga el mismo idCategoria
+    
+    //Si el objeto tiene un idCategoria, lo busca... si lo encuentra
+    //lo actualiza si no.. lo crea..
+    
+    public void save(Categoria categoria);
+    
+    //Se elimina el registro que tenga el idCategoria pasado por parametro
+    
+    public void delete(Categoria categoria);
+    
+    
+    
+    
     
 }
