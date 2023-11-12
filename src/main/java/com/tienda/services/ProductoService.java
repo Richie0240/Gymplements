@@ -35,7 +35,17 @@ public interface ProductoService {
     public void delete(Producto Producto);
     
     
+    //devuelve la lista de productos fitrados
+    public List<Producto> consultaQuery(
+            double precioInf, double precioSup);
+     
+    //devuelve la lista de productos fitrados CON JPQL...
+    public List<Producto> consultaJPQL(
+            double precioInf, double precioSup);
     
+    //devuelve la lista de productos fitrados CON SQL...
+    public List<Producto> consultaSQL(
+            double precioInf, double precioSup);
     
-    
+     
 }
