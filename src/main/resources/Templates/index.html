@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html 
-    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Gymplements</title>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/JS/rutinas.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <header th:fragment="header" style="position: fixed; width: 100%; background-color: #212529; z-index: 100;">
 
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="~{layout/plantilla :: head}">
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8"/>
-    </head>
-    <body>
-        <header th:replace="~{layout/plantilla :: header}"/>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+        <a class="navbar-brand" href="#">
+            <h2 class="text-white" >Gymplements</h2>
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white; font-weight: bold;">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white; font-weight: bold;">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white; font-weight: bold;">Suplementos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white; font-weight: bold;">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@{/Templates/login}" style="color: white; font-weight: bold;">Mi cuenta</a>
+                        </li>
+                       
+                    </ul>
+                    <div class="form-inline" style="position: sticky; bottom: 0; right: 20px;">
+                        <button class="btn btn-light" type="button" style="background-color: transparent; border: none; margin: 0; padding: 0;">
+                            <input class="form-control mr-2" type="search" placeholder="Buscar" aria-label="Search" style="color: white; font-weight: bold;" />
+                        </button>
+                    </div>
+                </div>
+                
+    </nav>
+</header>
 
-        <footer th:replace="~{layout/plantilla :: footer}"/>
+<div th:fragment="imageTable" style="text-align: center; margin-left: 40px; margin-right: 40px;" >
+    
+</div>
 
-    </body>
-
+</body>
 </html>
